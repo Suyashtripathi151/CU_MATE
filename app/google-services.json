@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "747607098136",
+    "project_id": "cuait-6238b",
+    "storage_bucket": "cuait-6238b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:747607098136:android:fd3e64edf5bcf2f0e1546d",
+        "android_client_info": {
+          "package_name": "com.example.cuait"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "747607098136-3eo3cksjm4cpfb60ooafh2lcl007afk1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkJ_GRLoxTXogKkz-ci1I1F0TxZdQbFjI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "747607098136-3eo3cksjm4cpfb60ooafh2lcl007afk1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/losttoolbar"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@color/red"
+        android:orientation="horizontal"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/lostlogo"
+            android:layout_width="307dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/register_text"
+            android:paddingLeft="80dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:src="@drawable/finallogo" />
+
+
+        <ImageButton
+            android:id="@+id/lostmenubtn2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:backgroundTint="@color/red"
+            android:src="@drawable/ic_baseline_menu_24"
+            android:text="Button" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/lostview"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@drawable/roundedcard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/losttoolbar" />
+
+    <View
+        android:id="@+id/lostcenterview"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/roundedcorner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/losttoolbar" />
+
+
+    <ScrollView
+        android:id="@+id/lostscroll2"
+        android:layout_width="357dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/lostbtnsubmit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lostcenterview"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <LinearLayout
+            android:id="@+id/lostlinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lostedittext">
+
+
+            <ImageView
+                android:id="@+id/lostimgmissing"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center|center_horizontal|center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="4dp"
+                app:srcCompat="@drawable/lost" />
+
+            <Button
+                android:id="@+id/lostbtnuploadmissing"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/btn_background"
+                android:gravity="center"
+                android:text="Sellect Image >>>"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lostscroll2"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <Switch
+                android:id="@+id/lostswitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="right|center_vertical"
+                android:text="I am Looking For missing item"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/losttextviewitem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Name of Missing Item"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/losttextView3" />
+
+            <EditText
+                android:id="@+id/lostinp_itemname"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+
+                android:backgroundTint="@color/dark_red"
+                android:contentDescription="@string/enter_your_name"
+                android:drawableRight="@drawable/ic_baseline_person"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:textColor="#8c8c8c"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/losttextview2" />
+
+            <TextView
+                android:id="@+id/losttextviewphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Phone Number"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/losttextView3" />
+
+            <EditText
+                android:id="@+id/lostinp_phone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/dark_red"
+                android:contentDescription="@string/input_your_value"
+                android:drawableRight="@drawable/ic_baseline_call_24"
+                android:ems="10"
+                android:inputType="number"
+                android:textColor="#8c8c8c"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/losttextView9" />
+
+            <TextView
+                android:id="@+id/losttextViewplace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Place"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/losteditNameSignUp" />
+
+            <EditText
+                android:id="@+id/lostinp_place"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/dark_red"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:textColor="#8c8c8c"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/losttextView4" />
+
+            <TextView
+                android:id="@+id/losttextViewmissingfrom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Missing From"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/losteditNameSignUp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/lostbuttondate"
+                    android:layout_width="4dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:alpha="0.6"
+                    android:background="#FFFFFF"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/baseline_arrow_right_alt_24" />
+
+                <TextView
+                    android:id="@+id/losttextViewdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="5dp"
+                    android:text="dd-mm-yyyy"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/losttextViewowner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Name Of Owner"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/losteditNameSignUp" />
+
+            <EditText
+                android:id="@+id/lostinp_owner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/dark_red"
+                android:contentDescription="@string/enter_your_name"
+                android:drawableRight="@drawable/ic_baseline_person"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:textColor="#8c8c8c"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/losttextview2" />
+
+            <TextView
+                android:id="@+id/losttextViewDescrip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Item Description"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/losteditNameSignUp" />
+
+            <EditText
+                android:id="@+id/lostinp_descrip"
+                android:layout_width="match_parent"
+                android:layout_height="149dp"
+                android:background="#0DF3EDED"
+                android:ems="10"
+                android:gravity="start"
+                android:hint="Write a detailed description about your missing item here."
+                android:inputType="textLongMessage|textMultiLine"
+                android:textAlignment="textStart"
+                android:textColor="#8c8c8c"
+                android:textColorHint="#BF201F1F"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/losttextView4" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/losttextViewwelome2"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center|center_horizontal|top|left|center_vertical"
+        android:text="@string/welcome"
+        android:textColor="#FDFDFD"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/lostcenterview"
+        app:layout_constraintEnd_toEndOf="@+id/lostcenterview"
+        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintStart_toStartOf="@+id/lostcenterview"
+        app:layout_constraintTop_toBottomOf="@+id/losttoolbar" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/lostimgprofilepic2"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:backgroundTint="#FAFAFA"
+        android:src="@drawable/jester"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_overlay="true"
+        app:civ_border_width="3dp"
+        app:civ_circle_background_color="#CAC2C2"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:foregroundGravity="center_vertical|center"
+        app:layout_constraintBottom_toBottomOf="@+id/lostcenterview"
+        app:layout_constraintEnd_toEndOf="@+id/lostcenterview"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toEndOf="@+id/losttextViewwelome2"
+        app:layout_constraintTop_toBottomOf="@+id/losttoolbar" />
+
+    <Button
+        android:id="@+id/lostbtnsubmit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/btn_background"
+        android:gravity="center"
+        android:text="@string/submit"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lostscroll2"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

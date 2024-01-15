@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbg2"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@color/red"
+        android:orientation="horizontal"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="307dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/register_text"
+            android:paddingLeft="80dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:src="@drawable/finallogo" />
+
+        <ImageButton
+            android:id="@+id/menubtn2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:backgroundTint="@color/red"
+            android:src="@drawable/ic_baseline_menu_24"
+            android:text="Button" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@drawable/roundedcard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <View
+        android:id="@+id/centerview"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/roundedcorner"
+        app:layout_constraintBottom_toTopOf="@+id/scroll2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/textViewwelome2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center|center_horizontal|top|left|center_vertical"
+        android:text="@string/welcome"
+        android:textColor="#FDFDFD"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/centerview"
+        app:layout_constraintEnd_toEndOf="@+id/centerview"
+        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintStart_toStartOf="@+id/centerview"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgprofilepic2"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:backgroundTint="#FAFAFA"
+        android:foregroundGravity="center_vertical|center"
+        android:src="@drawable/jester"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_overlay="true"
+        app:civ_border_width="3dp"
+        app:civ_circle_background_color="#CAC2C2"
+        app:layout_constraintBottom_toBottomOf="@+id/centerview"
+        app:layout_constraintEnd_toEndOf="@+id/centerview"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toEndOf="@+id/textViewwelome2"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+
+    <ScrollView
+        android:id="@+id/scroll2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomBarv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/centerview">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/image_slider"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                app:iss_auto_cycle="true"
+                app:iss_delay="3500"
+                app:iss_period="2000"
+                app:iss_text_align="CENTER" />
+
+
+            <!-- Raise a Query section -->
+
+
+            <!-- Picture of the Week section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txtpow2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/dark_red"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:paddingBottom="1dp"
+                    android:text="@string/picture_of_the_week"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtwinner2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:paddingBottom="3dp"
+                    android:text="Winner - "
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtwinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:paddingBottom="3dp"
+                    android:text="Total Votes- "
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img_picture_of_week_i2"
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@string/displayed_picture_of_the_week"
+                    app:srcCompat="@drawable/cu3" />
+
+
+                <TextView
+                    android:id="@+id/txtpowcaption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    tools:ignore="TextViewEdits" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtpow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/dark_red"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="VOTE FOR THE BEST PICTURE"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtpow4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Voting for Picture of the week will remain open until Sunday. The announcement of the winner's name is scheduled for the following Monday."
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <com.denzcoskun.imageslider.ImageSlider
+                    android:id="@+id/image_slider2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="450dp"
+                    android:clickable="true"
+                    android:contextClickable="true"
+                    app:iss_auto_cycle="true"
+                    app:iss_corner_radius="020"
+                    app:iss_delay="6500"
+                    app:iss_period="2000"
+                    app:iss_text_align="CENTER" />
+
+                <TextView
+                    android:id="@+id/txtpow3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="TAP TO VOTE"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnvote2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/dark_red"
+                    android:text="        Participate         "
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <me.ibrahimsn.lib.SmoothBottomBar
+        android:id="@+id/bottomBarv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:saveEnabled="true"
+        app:backgroundColor="@color/dark_red"
+        app:iconSize="25dp"
+        app:iconTint="#FFFFFF"
+        app:indicatorRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scroll2"
+        app:menu="@menu/menu"
+        app:textColor="@color/white"
+        app:textSize="15dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

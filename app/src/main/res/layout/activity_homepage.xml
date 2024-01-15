@@ -1,0 +1,195 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <!-- Top bar with university logo and menu button -->
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textwelcome"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:backgroundTint="#574B4B"
+            android:inputType="textMultiLine"
+            android:layout_marginLeft="5dp"
+            android:maxLines="2"
+            android:minLines="2"
+            android:text="@string/welcome"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/register_text"
+            android:paddingLeft="-105dp"
+            android:paddingRight="-52dp"
+            android:src="@drawable/logo" />
+
+        <ImageButton
+            android:id="@+id/menubtn2"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:backgroundTint="#574B4B"
+            android:src="@drawable/ic_baseline_menu_24"
+            android:text="Button" />
+
+    </LinearLayout>
+
+    <!-- Main content section -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:padding="10dp">
+
+            <!-- Raise a Query section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/roundedcard2"
+                android:orientation="vertical"
+
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/txtattention2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingBottom="10dp"
+                    android:text="@string/attention_please"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/inptcaption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="@string/your_hint"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/black"
+                    android:lines="5"
+                    android:maxLines="10"
+                    android:minLines="5"
+                    android:scrollbars="vertical"
+                    android:textColorHint="@color/black" />
+
+                <TextView
+                    android:id="@+id/txtuser2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="6dp"
+                    android:text="@string/user"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btnupvote"
+                    android:layout_width="164dp"
+                    android:layout_height="34dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/btn_background"
+                    android:text="@string/raise_your_query" />
+
+            </LinearLayout>
+
+            <!-- Picture of the Week section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/txtpow2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingBottom="1dp"
+                    android:text="@string/picture_of_the_week"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtwinner2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:paddingBottom="3dp"
+                    android:text="Winner - "
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:id="@+id/img_picture_of_week_i2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="@string/displayed_picture_of_the_week"
+                    android:background="@drawable/img"/>
+
+                <TextView
+                    android:id="@+id/txtpowcaption2"
+                    android:layout_width="375dp"
+                    android:layout_height="66dp"
+                    android:layout_gravity="center_horizontal"
+                    android:inputType="textMultiLine"
+                    android:paddingBottom="7dp"
+                    android:text="@string/caption"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="italic"
+                    tools:ignore="TextViewEdits" />
+
+                <Button
+                    android:id="@+id/btnuploadpow2"
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_background"
+                    android:text="@string/nominate_your_picture"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

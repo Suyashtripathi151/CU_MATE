@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".RaiseIssue">
+
+
+    <LinearLayout
+        android:id="@+id/raisetoolbar"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@color/red"
+        android:orientation="horizontal"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/raiselogo"
+            android:layout_width="307dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/register_text"
+            android:paddingStart="80dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:src="@drawable/finallogo" />
+
+
+        <ImageButton
+            android:id="@+id/raisemenubtn2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:backgroundTint="@color/red"
+            android:src="@drawable/ic_baseline_menu_24"
+            android:text="Button" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@drawable/roundedcard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/raisetoolbar" />
+
+    <View
+        android:id="@+id/centerview"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/roundedcorner"
+        app:layout_constraintBottom_toTopOf="@+id/titletext4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/raisetoolbar" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgprofilepicraise"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:backgroundTint="#FAFAFA"
+        android:foregroundGravity="center_vertical|center"
+        android:src="@drawable/jester"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_overlay="true"
+        app:civ_border_width="3dp"
+        app:civ_circle_background_color="#CAC2C2"
+        app:layout_constraintBottom_toBottomOf="@+id/centerview"
+        app:layout_constraintEnd_toEndOf="@+id/centerview"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toEndOf="@+id/textViewwelomeraise"
+        app:layout_constraintTop_toBottomOf="@+id/raisetoolbar" />
+
+    <TextView
+        android:id="@+id/textViewwelomeraise"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center|center_horizontal|top|left|center_vertical"
+        android:text="@string/welcome"
+        android:textColor="#FDFDFD"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/centerview"
+        app:layout_constraintEnd_toEndOf="@+id/centerview"
+        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintStart_toStartOf="@+id/centerview"
+        app:layout_constraintTop_toBottomOf="@+id/raisetoolbar" />
+
+    <TextView
+        android:id="@+id/titletext4"
+        android:layout_width="307dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="Raise Your Voice"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/centerview" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnraise"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titletext4" />
+
+
+    <Button
+        android:id="@+id/btnraise"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/btn_background"
+        android:gravity="center"
+        android:text="@string/raise_your_query"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnmyquery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:textSize="16sp"
+        android:background="@color/red"
+        android:text="    My Queries    "
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnraise"
+        app:layout_constraintEnd_toEndOf="@+id/recyclerView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

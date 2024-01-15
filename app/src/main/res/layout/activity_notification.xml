@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Notification">
+
+    <LinearLayout
+        android:id="@+id/nottoolbar"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@color/red"
+        android:orientation="horizontal"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/notlogo"
+            android:layout_width="307dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/register_text"
+            android:paddingLeft="80dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:src="@drawable/finallogo" />
+
+
+        <ImageButton
+            android:id="@+id/notmenubtn2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:backgroundTint="@color/red"
+            android:src="@drawable/ic_baseline_menu_24"
+            android:text="Button" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/notview"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@drawable/roundedcard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nottoolbar" />
+
+    <View
+        android:id="@+id/notcenterview"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/roundedcorner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nottoolbar" />
+
+    <TextView
+        android:id="@+id/nottextViewwelome2"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center|center_horizontal|top|left|center_vertical"
+        android:text="@string/welcome"
+        android:textColor="#FDFDFD"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/notcenterview"
+        app:layout_constraintEnd_toEndOf="@+id/notcenterview"
+        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintStart_toStartOf="@+id/notcenterview"
+        app:layout_constraintTop_toBottomOf="@+id/nottoolbar" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/notimgprofilepic2"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:backgroundTint="#FAFAFA"
+        android:src="@drawable/jester"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_overlay="true"
+        app:civ_border_width="3dp"
+        app:civ_circle_background_color="#CAC2C2"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:foregroundGravity="center_vertical|center"
+        app:layout_constraintBottom_toBottomOf="@+id/notcenterview"
+        app:layout_constraintEnd_toEndOf="@+id/notcenterview"
+        app:layout_constraintStart_toEndOf="@+id/nottextViewwelome2"
+        app:layout_constraintTop_toBottomOf="@+id/nottoolbar" />
+
+<!--    <androidx.appcompat.widget.SearchView-->
+<!--        android:id="@+id/searchView2"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:defaultQueryHint="Search Here _ _ _ "-->
+<!--        android:background="@color/text_shadow_white"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/recyclerView"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/notcenterview" />-->
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editsearch" />
+
+    <EditText
+        android:id="@+id/editsearch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:drawableStart="@drawable/baseline_search_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="Search Here  "
+        android:paddingLeft="5dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notcenterview" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

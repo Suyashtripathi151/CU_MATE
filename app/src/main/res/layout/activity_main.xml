@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="1"
+    android:background="@drawable/portait2"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/sv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            tools:visibility="visible">
+
+
+            <ImageView
+                android:id="@+id/logo1"
+                android:layout_width="180dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginBottom="15dp"
+                app:srcCompat="@drawable/finallogo" />
+
+            <EditText
+                android:id="@+id/inpemail1"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_margin="5dp"
+                android:alpha="0.8"
+                android:background="@drawable/roundedcorner"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:hint="ENTER YOUR USERMAIL"
+                android:inputType="textEmailAddress"
+                android:paddingStart="8dp"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.671"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/inppass1"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_margin="5dp"
+                android:alpha="0.8"
+                android:background="@drawable/roundedcorner"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:hint="ENTER YOUR PASSWORD"
+                android:inputType="textPassword"
+                android:paddingStart="8dp"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:textSize="20sp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.767"
+                tools:ignore="TouchTargetSizeCheck"
+                tools:visibility="visible" />
+
+            <Button
+                android:id="@+id/loginbutton1"
+                android:layout_width="90dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/dark_red"
+                android:gravity="center|center_vertical"
+                android:text="LOG IN"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/forgotbutton1"
+                android:layout_width="208dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="50dp"
+                android:background="@color/cardview_shadow_end_color"
+                android:ems="10"
+                android:hapticFeedbackEnabled="false"
+                android:text="Forgot Password ?"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/alreadybutton1"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/btn_background"
+                android:text="Create an Account"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

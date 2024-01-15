@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item
+        android:id="@+id/resetpassword"
+        android:title="Reset Password">
+
+    </item>
+
+    <item
+        android:id="@+id/disableaccount"
+        android:title="Disable Account">
+
+    </item>
+
+    <item
+        android:id="@+id/deleteaccount"
+        android:title="Delete Account">
+
+    </item>
+
+
+    <item
+        android:id="@+id/logout"
+        android:title="Log out">
+
+    </item>
+</menu>

@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">CU AIT</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="sign_in_account">Sign in to your</string>
+    <string name="select_department">Select Department</string>
+    <string name="select_course">Select Course</string>
+
+
+    -
+    <string name="register_text">
+
+<u>Register Now</u>
+
+
+
+</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="email_id">Email ID</string>
+    <string name="choose">CHOOSE</string>
+    <string name="update">UPDATE</string>
+    <string name="chandigarh_university">CHANDIGARH UNIVERSITY</string>
+    <string name="edit_your_profile">EDIT YOUR PROFILE</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="input_your_value">INPUT YOUR VALUE</string>
+    <string name="raise_your_query">Raise Your Query</string>
+    <string name="your_hint">Write Your Issue Here</string>
+    <string name="picture_of_the_week">Picture Of The Week</string>
+    <string name="submit">Submit</string>
+    <string name="caption">CAPTION</string>
+    <string name="displayed_picture_of_the_week">Displayed Picture of the week</string>
+    <string name="nominate_your_picture">Upload Your Picture</string>
+    <string name="poll_option1">Poll option1</string>
+    <string name="poll_option2">Poll option2</string>
+    <string name="poll_option3">Poll option3</string>
+    <string name="attention_please">Attention Please</string>
+    <string name="user">- User</string>
+    <string name="upload">Upload</string>
+    <string name="upload_from_gallery">Upload From Gallery</string>
+    <string name="write_your_caption_here">Write Your Caption Here</string>
+    <string name="powdetails">Upload A Picture Of Chandigarh University clicked by you and the picture with maximum votes will be selcted as PICTURE OF THE WEEK and the winner will be given shoutout with credits</string>
+    <string name="write_your_captions_here">Write Your Captions Here</string>
+    <string name="upload_from_camera">Upload From Camera</string>
+    <string name="welcome">Welcome\n_ _ _ _ _ _</string>
+</resources>

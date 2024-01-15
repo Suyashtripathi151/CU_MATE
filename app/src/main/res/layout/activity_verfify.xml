@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="1"
+    android:background="@drawable/portait2"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+            <TextView
+                android:id="@+id/verifytext4"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="15dp"
+                android:alpha="1"
+                android:background="@color/dark_red"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="VERIFY YOUR EMAIL"
+                android:textColor="#FFFFFF"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/logo4"
+                android:layout_width="180dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@drawable/finallogo" />
+
+            <TextView
+                android:id="@+id/multilinetext4"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+
+                android:background="#51050505"
+                android:inputType="textMultiLine"
+                android:text="To ensure the security of your account, we need to verify your email address.  Please check your email inbox for a verification message from us"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/inpemail4"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_margin="5dp"
+                android:alpha="0.8"
+                android:background="@drawable/roundedcorner"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:hint="ENTER YOUR EMAIL ADDRESS"
+                android:inputType="textEmailAddress"
+                android:paddingStart="8dp"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:textSize="20sp"
+
+                android:visibility="visible"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/verifybutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:background="@drawable/btn_background"
+                android:text="VERIFY"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

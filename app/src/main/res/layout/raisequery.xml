@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/roundedcard2"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/txtattention2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/dark_red"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="@string/raise_your_query"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/inptcaption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:hint="@string/your_hint"
+        android:inputType="textMultiLine"
+        android:maxLines="20"
+        android:minLines="5"
+        android:scrollbars="vertical"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <TextView
+        android:id="@+id/txtuser2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="6dp"
+        android:text="@string/user"
+        android:textColor="@color/black" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|end"
+        android:paddingEnd="4dp"
+        android:text="Show as Anonymous   "
+        android:textAlignment="textEnd"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/btnupvote"
+        android:layout_width="164dp"
+        android:layout_height="34dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/btn_background"
+        android:text="@string/submit" />
+
+
+</LinearLayout>
+

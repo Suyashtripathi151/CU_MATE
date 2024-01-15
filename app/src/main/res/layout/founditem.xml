@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="#E2FFFFFF"
+    android:elevation="5dp"
+    app:cardCornerRadius="5dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/roundedcard2"
+        android:orientation="vertical"
+
+        android:padding="15dp">
+
+        <ScrollView
+            android:id="@+id/fitemlostscroll2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            app:layout_constraintBottom_toTopOf="@+id/fitemlostbtnsubmit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fitemlostcenterview"
+            app:layout_constraintVertical_bias="1.0">
+
+
+            <LinearLayout
+                android:id="@+id/fitemlostlinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fitemlostedittext">
+
+
+                <ImageView
+                    android:id="@+id/fitemlostimgmissing"
+                    android:layout_width="250dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center|center_horizontal|center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="4dp"
+                    app:srcCompat="@drawable/baseline_no_photography_24" />
+
+
+                <TextView
+                    android:id="@+id/fitemlosttextviewowner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:drawablePadding="4dp"
+                    android:text="Looking For "
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fitemlosttextView3" />
+
+                <TextView
+                    android:id="@+id/fitemlosttextviewitem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="4dp"
+                    android:drawableStart="@drawable/baseline_card_giftcard_24"
+                    android:drawablePadding="4dp"
+                    android:drawableTint="@color/dark_red"
+                    android:text="Missing Item"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fitemlosttextView3" />
+
+                <TextView
+                    android:id="@+id/fitemlosttextViewmissingfrom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableStart="@drawable/baseline_calendar_month_24"
+                    android:drawablePadding="4dp"
+                    android:drawableTint="@color/dark_red"
+                    android:text="Missing From"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fitemlosteditNameSignUp" />
+
+                <TextView
+                    android:id="@+id/fitemlosttextViewplace"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableStart="@drawable/baseline_place_24"
+                    android:drawablePadding="4dp"
+                    android:drawableTint="@color/dark_red"
+                    android:text="Place"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fitemlosteditNameSignUp" />
+
+                <TextView
+                    android:id="@+id/fitemlosttextViewowner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableStart="@drawable/ic_baseline_person"
+                    android:drawablePadding="4dp"
+                    android:text="Name Of Owner"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fitemlosteditNameSignUp" />
+
+                <TextView
+                    android:id="@+id/fitemlosttextviewphone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableStart="@drawable/ic_baseline_phone_24"
+                    android:drawablePadding="4dp"
+                    android:drawableTint="@color/dark_red"
+                    android:text="Phone Number"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fitemlosttextView3" />
+
+
+                <TextView
+                    android:id="@+id/fitemlosttextViewDescrip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableStart="@drawable/baseline_info_24"
+                    android:drawablePadding="4dp"
+                    android:drawableTint="@color/dark_red"
+                    android:text="Item Description"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fitemlosteditNameSignUp" />
+
+                <EditText
+                    android:id="@+id/fitemlostinp_descrip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="#0DF3EDED"
+                    android:editable="false"
+                    android:ems="10"
+                    android:gravity="start"
+                    android:hint="Write a detailed description about your missing item here."
+                    android:inputType="textLongMessage|textMultiLine"
+                    android:textAlignment="textStart"
+                    android:textColor="#000000"
+                    android:textColorHint="#BF000000"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fitemlosttextView4" />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/fitemtxtuser2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="6dp"
+            android:text="@string/user"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/fitemtxtstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|end"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="8dp"
+            android:background="#083E3939"
+            android:foregroundGravity="center"
+            android:gravity="center_horizontal"
+            android:text="000 UPVOTES"
+            android:textColor="@color/dark_red"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/imageButtonmsg2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/white"
+            app:srcCompat="@drawable/ic_baseline_email_24" />
+
+        <Button
+            android:id="@+id/fitembtnfound"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/btn_background"
+            android:text="FOUND"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

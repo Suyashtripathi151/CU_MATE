@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbg2"
+    tools:context=".PictureOfWeek">
+
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnupload"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/top_bar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:contentDescription="@string/register_text"
+                    android:src="@drawable/logo"
+                    app:srcCompat="@drawable/finallogo" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtpowdetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:inputType="textMultiLine"
+                android:scrollbars="vertical"
+                android:text="@string/powdetails"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/btnselectimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="@drawable/btn_background"
+                android:gravity="center"
+                android:text="   Select Image  >>  "
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold">
+
+            </Button>
+
+            <ImageView
+                android:id="@+id/imgselectedpow"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                app:srcCompat="@drawable/culoginbg2" />
+
+            <EditText
+                android:id="@+id/inptcaption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="#FFFFFF"
+                android:fadeScrollbars="true"
+                android:hint="@string/write_your_captions_here"
+                android:inputType="textMultiLine"
+                android:scrollbars="vertical"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/btnupload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/btn_background"
+        android:text="@string/upload"
+
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold">
+
+    </Button>
+
+
+</RelativeLayout>
+
+
+
+
+
